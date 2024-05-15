@@ -43,7 +43,7 @@ header nav {
   height: 16%;
 }
 
-#logo-principal {
+.logo-principal {
   /*logo principal menu movil*/
   width: 100%;
   height: 100%;
@@ -97,7 +97,7 @@ header nav {
   margin-left: 300px;
 }
 .search-input {
-  width: 60%;
+  width: 82%;
   height: 10%;
   align-content: end;
 }
@@ -142,18 +142,11 @@ main {
   width: 100vw;
 }
 
-/*/////////////// CAMBIOS MENU HAMBURGUESA DE BOOSTRAP //////////////////////////////////////*/
+/*/////////////////////// CAMBIOS MENU HAMBURGUESA DE BOOSTRAP //////////////////////////////////////*/
 
 .bg-menu {
   background-color: #a33a36;
   z-index: 2;
-  /*background-image: linear-gradient(
-    45deg,
-     rgba(87, 49, 65, 0.5),
-    rgba(189, 65, 172, 0.5)*/
-  /*   rgba(252, 250, 165, 0.973),
-    rgba(37, 37, 35, 0.5)
-  );*/
 }
 
 .navbar-nav .nav-link {
@@ -167,6 +160,8 @@ main {
   background-color: darkorange;
   color: white;
 }
+
+/*-----------------------------------------INDEX-------------------------------------------------*/
 
 /*grid principal con todas las secciones*/
 .grid_container {
@@ -249,9 +244,7 @@ main {
   color: #000000;
 }
 
-/*//////////////// COMIENZO MEDIA QUERIES ///////////////////////////*/
-
-/*pantalla mobil*/
+/*//////////////////////////////MEDIA QUERIES PANTALLA DESKTOP (index)////////////////////////////////*/
 @media screen and (max-width: 767px) {
   .header-name {
     display: none;
@@ -296,7 +289,7 @@ main {
   }
 }
 
-/*///////////////////////////PANTALLA DESKTOP/////////////////////////////*/
+/*////////////////////////MEDIA QUERIES PANTALLA DESKTOP (index)/////////////////////////////*/
 
 @media screen and (min-width: 768px) {
   .grid_container {
@@ -338,7 +331,6 @@ main {
   .title-h1 {
     width: 100%;
     font-size: 400%;
-    /*-webkit-text-stroke: 2px rgb(70, 36, 36);*/
     text-align: center;
     padding: 9% 0;
     background-color: rgba(143, 13, 13, 0.6);
@@ -413,11 +405,7 @@ main {
   }
 }
 
-/* /////////////////////FIN MEDIA QUERIE PANTALLA DESKTOP////////////////////*/
-
-/*flex-direction: column;
-   align-items: center; /* Centra horizontalmente */
-/*justify-content: center; /* Centra verticalmente */
+/* /////////////////////FIN MEDIA QUERIE PANTALLA DESKTOP (index)////////////////////*/
 
 #menu-logo {
   width: 50%;
@@ -429,8 +417,8 @@ main {
 /* estilos dentro del main*/
 .grid_container {
   background-image: linear-gradient(
-    rgba(233, 127, 78, 0.959),
-    rgba(214, 168, 41, 0.877)
+    rgba(202, 105, 83, 0.96),
+    rgba(214, 98, 41, 0.88)
   );
   background-size: cover;
   display: grid;
@@ -457,9 +445,9 @@ main {
   grid-area: info-escuela;
 }
 
-/*//////////////////////////////////////pagina de historia//////////////////////////////////////////////////*/
+/*----------------------------pagina de historia ("nosotros")--------------------------------------------*/
 
-.contenedor,
+.contenedor,            /*celdas para cuadros de información*/
 .contenedor-dos {
   display: flex;
   flex-direction: column;
@@ -501,39 +489,40 @@ main {
   line-height: 2em;
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.6);
-
   height: auto;
-  width: 80%; /* Ajusta el ancho del texto */
-
+  width: 80%;
   margin-left: 10%;
-  margin-top: -1%; /* Ajusta la superposición vertical */
-  z-index: 1; /* Añadido */
+  margin-top: -1%;
+  z-index: 1;
 }
-
+/*fondo primer recuadro de informacion*/
 .contenedor::before {
+  /*esto es para que se establezca la img de fondo sin ocupar espacio*/
   content: "";
-  background-image: url("../IMG/playa-amanecer.jpeg"); /* Ruta de la imagen */
+  background-image: url("../IMG/playa-amanecer.jpeg");
   background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Ancho completo */
+  width: 100%;
   height: 100%;
-  z-index: 0; /* Añadido */
+  z-index: 0;
 }
+
+/*fondo segundo recuadro de informacion*/
 
 .contenedor-dos::before {
   content: "";
-  background-image: url("../IMG/vela3.avif"); /* Ruta de la imagen */
+  background-image: url("../IMG/vela3.avif");
   background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Ancho completo */
+  width: 100%;
   height: 100%;
-  z-index: 0; /* Añadido */
+  z-index: 0;
 }
-
+/*///////////////////////MEDIA QUERIES PANTALLA DESKTOP ("nosotros")/////////////////////////////*/
 @media screen and (min-width: 768px) {
   .contenedor,
   .contenedor-dos {
@@ -555,11 +544,10 @@ main {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 1% 0;
     color: beige;
-    margin-top: 2%; /* Ajusta la superposición vertical */
+    margin-top: 2%;
     margin-left: 10%;
-    width: 50%; /* Ajusta el ancho del texto */
-    max-width: 600px; /* Ancho máximo */
-    z-index: 1; /* Añadido */
+    width: 50%;
+    z-index: 1;
   }
 
   .contenedor p,
@@ -570,13 +558,12 @@ main {
     line-height: 2em;
     padding: 3%;
     background-color: rgba(0, 0, 0, 0.6);
-    /* overflow: auto;*/
     height: auto;
-    width: 50%; /* Ajusta el ancho del texto */
-    max-width: 600px; /* Ancho máximo */
+    width: 50%;
+    max-width: 600px;
     margin-left: 10%;
-    margin-top: -1%; /* Ajusta la superposición vertical */
-    z-index: 1; /* Añadido */
+    margin-top: -1%;
+    z-index: 1;
   }
 
   .contenedor::before,
@@ -594,7 +581,7 @@ main {
 
   .contenedor-dos::before {
     content: "";
-    background-image: url("../IMG/vela3.avif"); /* Ruta de la imagen */
+    background-image: url("../IMG/vela3.avif");
     background-size: cover;
     position: absolute;
     top: 0;
@@ -616,7 +603,7 @@ main {
     padding: 0;
   }
 }
-/*///estilos para el boton "VER MAS" de BOOSTRAP//////////*/
+/*///estilos para el boton "VER MAS" de BOOSTRAP (pg. NOSOTROS)//////////*/
 
 .btn-texto {
   font-size: 1em;
@@ -630,9 +617,8 @@ main {
   z-index: 1;
 }
 
-/*
+/*----------------------------------pagina instructorado--------------------------------------*/
 
-/////////////////////////////pagina instructorado//////////////////////////////////////////////////*/
 .fondo {
   background-image: linear-gradient(
     45deg,
@@ -713,7 +699,7 @@ main {
   }
 
   .grid-images a {
-    display: block; /* asi ocupa el link ocupa todo el espacio disponibleee */
+    display: block; /* asi el link ocupa todo el espacio disponibleee */
   }
 
   .grid-images img {
@@ -757,13 +743,6 @@ main {
 .modo-de-pago {
   display: grid;
   grid-template-rows: 1fr;
-}
-
-.custom-border {
-  padding: 15px; /* Agrega espacio interno */
-}
-.custom-border:first-child {
-  border: 1px solid rgba(212, 84, 84, 0.6); /* agrega borde solo a la primera columna */
 }
 
 .info-general-instructorado p {
@@ -810,21 +789,21 @@ main {
 
 .custom-border {
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 1%;
 }
 
 .custom-border:last-child p:last-child {
   padding-bottom: 20%;
 }
+.col1 {
+  color: beige;
+  padding-top: 3%;
+}
 
 .custom-border:first-child {
   border: 2px solid #665353;
-  border-radius: 10px;
-  /*background-color: #d4574e;*/
-  background-image: linear-gradient(
-    rgba(244, 248, 248, 0.671),
-    rgba(151, 151, 149, 0.5)
-  );
+  border-radius: 20%;
+  background-color: #b95b55;
   height: auto;
   z-index: 2;
 }
@@ -843,7 +822,7 @@ main {
   text-align: center;
 }
 
-/*/////////////////////////////////////pagina profesorado //////////////////////////////////////////////////*/
+/*-----------------------------------------pagina profesorado ---------------------------------------------*/
 
 .banner-textos h1 {
   font-size: 3.5em;
@@ -873,7 +852,6 @@ main {
   width: 100%;
   height: 90%;
   z-index: -1;
-  /*opacity: 0.5;*/
 }
 
 .loto {
@@ -947,7 +925,7 @@ main {
   text-align: center;
 } /*fin formulario*/
 
-/*//////////////////////////////////////pagina de contacto//////////////////////////////////////////////////*/
+/*----------------------------------------pagina de contacto-------------------------------------------------*/
 
 #banner-contacto::before {
   /*establece imagen de fondo del primer titulo*/
@@ -965,7 +943,6 @@ main {
   width: 100%;
   height: 100%;
   z-index: -1;
-  /*opacity: 0.5;*/
 }
 
 #grid-contacto {
@@ -1074,7 +1051,7 @@ main {
   margin-left: 40%;
 }
 
-/*////////////////ACORDEON DE BOOSTRAP////////////////////////*/
+/*////////////////ACORDEON DE BOOSTRAP (preguntas frecuentes////////////////////////*/
 
 #acordeon {
   margin-left: 25%;
@@ -1195,172 +1172,3 @@ textarea:focus {
 input[type="radio"]:focus {
   outline: none;
 }
-
-/*///////////////////////////////////pagina de productos///////////////////////////////////////////////*/
-
-.grid-container4 {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "sidebar prenda1 prenda2"
-    "sidebar prenda3 prenda4"
-    "sidebar prenda5 prenda6";
-  gap: 20px;
-  align-items: center;
-}
-
-.sidebar {
-  grid-area: sidebar;
-}
-
-.sidebar {
-  height: 50%;
-  width: 30%;
-  /*position: fixed;*/
-  margin-top: 0;
-  left: 0;
-  background-color: cornflowerblue;
-  padding-top: 20px;
-  color: #fff;
-}
-
-.sidebar h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-form {
-  text-align: center;
-}
-
-table {
-  width: 100%;
-}
-
-table td {
-  padding: 10px;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-label {
-  display: block;
-  position: relative;
-  /* padding-left: 25px;*/
-  cursor: pointer;
-}
-
-/*label:before { lo quite porq jodia con boostrap}
-  content: "";
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  background-color: #333;
-  border-radius: 3px;
-  position: absolute;
-  left: 0;
-}*/
-
-input[type="checkbox"]:checked + label:before {
-  background-color: #007bff; /* Color cuando está seleccionado */
-}
-
-input[type="submit"] {
-  width: 80%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 16px;
-  margin-top: 20px;
-}
-
-input[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-.prenda1 {
-  grid-area: prenda1;
-}
-.prenda2 {
-  grid-area: prenda2;
-}
-.prenda3 {
-  grid-area: prenda3;
-}
-.prenda4 {
-  grid-area: prenda4;
-}
-.prenda5 {
-  grid-area: prenda5;
-}
-.prenda6 {
-  grid-area: prenda6;
-}
-
-/* 
-BARRA LATERAL CON OPCIONES DESPLEGABLES
-<div class="sidebar">
-            <h2>Talles de Ropa</h2>
-            <form>
-              <label for="talles">Selecciona tu talla:</label>
-              <select id="talles" name="talles">
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-              </select>
-            </form>
-          </div>
-
-////////////////////////////////
-.sidebar {
-  grid-area: sidebar;
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  padding-top: 20px;
-  color: #fff;
-}
-
-.sidebar h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-form {
-  text-align: center;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-select {
-  width: 80%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: #fff;
-  font-size: 16px;
-}
-
-select:hover {
-  background-color: #444;
-}
-
-select:focus {
-  outline: none;
-  background-color: #555;
-}
-*/
