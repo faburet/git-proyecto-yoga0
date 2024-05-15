@@ -14,13 +14,12 @@
   </head>
   <body>
     <header>
-      <!--Header para Desktop-->
+      <!--Titulos y logo para Desktop-->
       <div class="header-name">
         <img
           src="../IMG/klipartz2.png"
           id="logo-principal0"
           alt="logo principal de escuela de yoga" />
-
         <div id="name">
           <span>SAMADHI YOGA</span>
           <p>Union cuerpo-mente-alma</p>
@@ -33,25 +32,31 @@
               type="search"
               placeholder="Buscar"
               aria-label="Search" />
-            <button class="btn btn-outline-primary search-button" type="submit">
+            <button class="btn btn-outline-danger search-button" type="submit">
               Buscar
             </button>
           </form>
         </div>
       </div>
-      <!--fin de Header para desktop-->
+      <!--fin de titulos para desktop-->
+
+      <!--comienzo de la navbar de BOOSTRAP en movil-->
 
       <nav class="navbar navbar-expand-lg bg-menu ms-0 mt-0">
         <div class="container-fluid" style="display: flex">
           <a id="imagen-menu" href="#"
-            ><img id="logo-principal" src="../IMG/logo_principal3.png" alt=""
+            ><img
+              id="logo-principal"
+              src="../IMG/logo_principal3.png"
+              alt="silueta de hombre meditando frente al sol"
           /></a>
 
           <div id="name-Mb">
             <span>SAMADHI YOGA</span>
+
             <p id="subname-Mb">Union cuerpo-mente-alma</p>
           </div>
-
+          <!--boton de la barra posicionado arriba a la derecha en movil-->
           <button
             class="navbar-toggler"
             type="button"
@@ -61,10 +66,12 @@
             aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            <!--"todos los "aria" son para mejorar la accesibilidad, no cambia la funcionalidad-->
+            <!--"todos los "aria" son para mejorar la accesibilidad, no cambia la funcionalidad!-->
             <!--"aria-controls" asocia semanticamene el elemento al boton-->
           </button>
+          <!--fin del boton de menú-->
 
+          <!--contenido de opciones del menú-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-0 mb-lg-2">
               <li class="nav-item">
@@ -72,7 +79,7 @@
                   style="color: aliceblue"
                   class="nav-link active"
                   aria-current="page"
-                  href="#"
+                  href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -85,14 +92,17 @@
                   aria-expanded="false">
                   Historia
                 </a>
-                <ul class="dropdown-menu">
+                <!-- menu dropdown-->
+                <ul class="dropdown-menu bg-menu">
                   <li>
-                    <a class="dropdown-item" href="nosotros.html"
+                    <a class="dropdown-item" href="../PAGES/nosotros.html"
                       >Sobre Nosotros</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Escuela</a>
+                    <a class="dropdown-item" href="../index.html#info-escuela"
+                      >Escuela</a
+                    >
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Hatha Yoga</a>
@@ -102,19 +112,28 @@
                   </li>
                 </ul>
               </li>
+              <!-- fin de menú dropdown-->
               <li class="nav-item">
-                <a class="nav-link" href="#">Curso Profesorado</a>
+                <a class="nav-link" href="../PAGES/profesorado.html"
+                  >Curso Profesorado</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Curso Instructorado</a>
+                <a class="nav-link" href="../PAGES/instructorado.html"
+                  >Curso Instructorado</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Iniciacion Kriya Yoga</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Tienda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="../PAGES/contacto.html">Contacto</a>
               </li>
             </ul>
+            <!--comienzo de la estructura de input y boton de busqueda-->
             <div class="busqueda">
               <form class="d-flex" role="search">
                 <input
@@ -122,9 +141,10 @@
                   type="search"
                   placeholder="Search"
                   aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">
+                <button class="btn btn-outline-danger" type="submit">
                   Search
                 </button>
+                <!--final de la estructura de busqueda-->
               </form>
             </div>
           </div>
