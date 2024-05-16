@@ -27,7 +27,7 @@ header {
   background-image: linear-gradient(
     45deg,
     /* rgba(87, 49, 65, 0.5),
-    rgba(189, 65, 172, 0.5)*/
+      rgba(189, 65, 172, 0.5)*/
       rgba(252, 232, 165, 0.973),
     rgb(153, 31, 31)
   );
@@ -117,7 +117,7 @@ header nav {
   margin-bottom: 6%;
   background-image: url(../IMG/meditacion.jpg);
   background-size: cover;
-  height: 80%;
+  height: 114%;
 }
 
 .title-h1 {
@@ -190,7 +190,7 @@ main {
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .profesorado div div,      /*etiquetita de curso*/
-.instructorado div div, .iniciacion div div {
+  .instructorado div div, .iniciacion div div {
   font-size: 1.8em;
   font-weight: bolder;
   background-color: #c01c7c;
@@ -224,6 +224,7 @@ main {
 
 .imagenes-cursos {
   max-width: 90%;
+  margin-top: 18%;
   height: auto;
 }
 
@@ -319,6 +320,7 @@ main {
   }
 
   .imagenes-cursos {
+    margin-top: 0%;
     width: 90%;
     height: 60%;
     border: 2px solid #c20e0e;
@@ -356,7 +358,7 @@ main {
   /*///////////////////////////////estilado info de cursos Desktop//////////////////////////////////////////*/
 
   .profesorado div div,      /*etiquetita de curso*/
-.instructorado div div {
+  .instructorado div div {
     margin-left: 42%;
   }
 
@@ -448,7 +450,7 @@ main {
 /*----------------------------pagina de historia ("nosotros")--------------------------------------------*/
 
 .contenedor,            /*celdas para cuadros de información*/
-.contenedor-dos {
+  .contenedor-dos {
   display: flex;
   flex-direction: column;
   position: relative;
