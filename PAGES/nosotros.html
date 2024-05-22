@@ -10,17 +10,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
   </head>
   <body>
     <header>
       <!--Titulos y logo para Desktop-->
-      <div class="header-name">
+      <div>
         <img
-          src="../IMG/klipartz2.png"
+          src="../img/klipartz2.png"
           id="logo-principal0"
           alt="logo principal de escuela de yoga" />
-        <div id="name">
+        <div class="name">
           <span>SAMADHI YOGA</span>
           <p>Union cuerpo-mente-alma</p>
         </div>
@@ -32,7 +32,7 @@
               type="search"
               placeholder="Buscar"
               aria-label="Search" />
-            <button class="btn btn-outline-danger search-button" type="submit">
+            <button class="btn btn-outline-danger search-boton" type="submit">
               Buscar
             </button>
           </form>
@@ -43,18 +43,16 @@
       <!--comienzo de la navbar de BOOSTRAP en movil-->
 
       <nav class="navbar navbar-expand-lg bg-menu ms-0 mt-0">
-        <div class="container-fluid" style="display: flex">
+        <div class="container-fluid">
           <a id="imagen-menu" href="#"
             ><img
               class="logo-principal"
-              src="../IMG/logo_principal3.png"
+              src="../img/logo_principal3.png"
               alt="silueta de hombre meditando frente al sol"
           /></a>
 
-          <div id="name-Mb">
+          <div class="name">
             <span>SAMADHI YOGA</span>
-
-            <p id="subname-Mb">Union cuerpo-mente-alma</p>
           </div>
           <!--boton de la barra posicionado arriba a la derecha en movil-->
           <button
@@ -73,19 +71,19 @@
 
           <!--contenido de opciones del menú-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-0 mb-lg-2">
-              <li class="nav-item">
+            <ul class="navbar-nav me-auto mb-0 mb-lg-2 navbar-propio">
+              <li class="nav-item navitem-propio">
                 <a
-                  style="color: aliceblue"
-                  class="nav-link active"
+                  class="nav-link navlink-propio"
                   aria-current="page"
                   href="../index.html"
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown navitem-propio">
                 <a
-                  class="nav-link dropdown-toggle"
+                  id="current"
+                  class="nav-link dropdown-toggle navlink-propio"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -95,7 +93,7 @@
                 <!-- menu dropdown-->
                 <ul class="dropdown-menu bg-menu">
                   <li>
-                    <a class="dropdown-item" href="../PAGES/nosotros.html"
+                    <a class="dropdown-item" href="nosotros.html"
                       >Sobre Nosotros</a
                     >
                   </li>
@@ -113,24 +111,28 @@
                 </ul>
               </li>
               <!-- fin de menú dropdown-->
-              <li class="nav-item">
-                <a class="nav-link" href="../PAGES/profesorado.html"
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="profesorado.html"
                   >Curso Profesorado</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../PAGES/instructorado.html"
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="instructorado.html"
                   >Curso Instructorado</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Iniciacion Kriya Yoga</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="#"
+                  >Iniciacion Kriya Yoga</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tienda</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="#">Tienda</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../PAGES/contacto.html">Contacto</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
             <!--comienzo de la estructura de input y boton de busqueda-->
@@ -152,107 +154,110 @@
       </nav>
     </header>
 
-    <main>
-      <section class="contenedor">
-        <div class="titulos">
-          <h1 class="title-h2">LA MISION DE</h1>
-          <h2 class="title-h1">SAMADHI YOGA</h2>
-        </div>
-        <p>
-          En la Escuela Samadhi Yoga, nuestra misión es compartir y enseñar las
-          antiguas prácticas del Hatha Yoga y Kriya Yoga, brindando a nuestros
-          estudiantes las herramientas necesarias para cultivar la salud física,
-          mental y espiritual. Nos esforzamos por crear un espacio acogedor y de
-          apoyo donde cada individuo pueda embarcarse en su propio viaje de
-          autodescubrimiento y crecimiento personal. Buscamos promover el
-          bienestar integral, la armonía interna y la conexión con uno mismo y
-          con el mundo que nos rodea. A través de la práctica del yoga, buscamos
-          inspirar a nuestros estudiantes a vivir una vida consciente,
-          equilibrada y significativa, en armonía con la naturaleza y en
-          servicio a los demás.
-        </p>
-        <div class="titulos">
-          <h1 class="title-h2">LA VISION</h1>
-        </div>
-        <p>
-          En Samadhi Yoga, visualizamos un mundo donde el yoga sea accesible
-          para todas las personas, donde cada individuo tenga la oportunidad de
-          experimentar los profundos beneficios de esta antigua disciplina. Nos
-          esforzamos por ser un faro de luz y sabiduría en la comunidad del yoga
-          en Argentina y más allá, difundiendo el amor, la compasión y la paz a
-          través de nuestras enseñanzas y prácticas. Nuestra visión es crear un
-          espacio sagrado donde los estudiantes puedan florecer y crecer en su
-          práctica, nutriéndose mutuamente y formando una comunidad unida y
-          solidaria. Aspiramos a ser líderes en la enseñanza del yoga,
-          ofreciendo programas educativos de alta calidad, retiros
-          transformadores y eventos inspiradores que inspiren a las personas a
-          despertar su potencial más elevado y a vivir vidas plenas y
-          significativas. Con más de 30 años de experiencia en la enseñanza del
-          yoga, nos comprometemos a continuar sirviendo a nuestra comunidad con
-          dedicación, integridad y pasión, guiando a nuestros estudiantes hacia
-          el camino de la salud, la felicidad y la realización espiritual.
-        </p>
-      </section>
-      <section class="contenedor-dos">
-        <div class="titulos">
-          <h2 class="title-h1">HISTORIA</h2>
-        </div>
-        <p>
-          La historia de Samadhi Yoga es la de un viaje espiritual que comenzó
-          hace tres décadas en Argentina, de la mano del yogacharya Kriyananda.
-          Este maestro nació en Argentina y su búsqueda espiritual lo llevó a la
-          cuna del yoga, la India, donde se sumergió en el estudio del Hatha
-          Yoga. Sin embargo, su verdadero camino hacia la iluminación comenzó
-          cuando se convirtió en discípulo de Hariharananda, un venerado maestro
-          de Kriya Yoga.
-        </p>
-
-        <p>
-          El Kriya Yoga es una antigua práctica de meditación que se centra en
-          la purificación del cuerpo y la mente a través de técnicas de
-          respiración y meditación. Bajo la tutela de Hariharananda, Kriyananda
-          profundizó en esta disciplina milenaria, encontrando en ella la luz y
-          la sabiduría que tanto anhelaba. Con el deseo de compartir los frutos
-          de su propia transformación espiritual con otros, Kriyananda decidió
-          establecer su propia escuela de yoga en Argentina. Así nació Samadhi
-          Yoga, un lugar donde los buscadores de la verdad pueden encontrar
-          orientación, apoyo y comunidad en su viaje espiritual.
-          <!--Boton de BOOSTRAP PARA "VER MAS"-->
-          <button
-            class="btn btn-secondary btn-estilo btn-texto"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#historia-completa"
-            aria-expanded="false"
-            aria-controls="historia-completa">
-            Ver más
-          </button>
-        </p>
-
-        <div class="collapse" id="historia-completa">
-          <!--se completa la funcion del boton-->
+    <main class="background">
+      <div class="contiene">
+        <div class="mision">
+          <div>
+            <h1 class="title-h2">LA MISION DE</h1>
+            <h2 class="title-h1">SAMADHI YOGA</h2>
+          </div>
           <p>
-            Con el paso de los años, Samadhi Yoga ha crecido y florecido.
-            Actualmente, cuenta con un centro de diez hectáreas en la ciudad de
-            General Roca, en una bella área natural cercana al río y a un
-            relieve característico de la zona conocido como "las bardas" del
-            Alto Valle. Allí se imparten clases de yoga, meditación y filosofía
-            espiritual. Este centro es refugios de paz y serenidad, donde los
-            estudiantes pueden encontrar alivio del estrés y la agitación de la
-            vida moderna, y conectar con su verdadero ser interior.
-          </p>
-          <p>
-            La historia de Samadhi Yoga es una historia de amor, dedicación y
-            devoción. Es el testimonio vivo del poder transformador del yoga y
-            la meditación, y del deseo innato del ser humano de encontrar paz y
-            realización en su vida.
+            En la Escuela Samadhi Yoga, nuestra misión es compartir y enseñar
+            las antiguas prácticas del Hatha Yoga y Kriya Yoga, brindando a
+            nuestros estudiantes las herramientas necesarias para cultivar la
+            salud física, mental y espiritual. Nos esforzamos por crear un
+            espacio acogedor y de apoyo donde cada individuo pueda embarcarse en
+            su propio viaje de autodescubrimiento y crecimiento personal.
+            Buscamos promover el bienestar integral, la armonía interna y la
+            conexión con uno mismo y con el mundo que nos rodea. A través de la
+            práctica del yoga, buscamos inspirar a nuestros estudiantes a vivir
+            una vida consciente, equilibrada y significativa, en armonía con la
+            naturaleza y en servicio a los demás.
           </p>
         </div>
-      </section>
+        <div class="vision">
+          <div>
+            <h1 class="title-h2">LA VISION</h1>
+          </div>
+          <p>
+            En Samadhi Yoga, visualizamos un mundo donde el yoga sea accesible
+            para todas las personas, donde cada individuo tenga la oportunidad
+            de experimentar los profundos beneficios de esta antigua disciplina.
+            Nos esforzamos por ser un faro de luz y sabiduría en la comunidad
+            del yoga en Argentina y más allá, difundiendo el amor, la compasión
+            y la paz a través de nuestras enseñanzas y prácticas. Nuestra visión
+            es crear un espacio sagrado donde los estudiantes puedan florecer y
+            crecer en su práctica, nutriéndose mutuamente y formando una
+            comunidad unida y solidaria. Aspiramos a ser líderes en la enseñanza
+            del yoga, ofreciendo programas educativos de alta calidad, retiros
+            transformadores y eventos inspiradores que puedan impulsar a las
+            personas a despertar su potencial más elevado y a vivir vidas plenas
+            y significativas.
+          </p>
+        </div>
+        <div class="historia">
+          <div>
+            <h2 class="title-h1">HISTORIA</h2>
+          </div>
+          <p>
+            La historia de Samadhi Yoga es la de un viaje espiritual que comenzó
+            hace tres décadas en Argentina, de la mano del yogacharya
+            Kriyananda. Este maestro nació en Argentina y su búsqueda espiritual
+            lo llevó a la cuna del yoga, la India, donde se sumergió en el
+            estudio del Hatha Yoga. Sin embargo, su verdadero camino hacia la
+            iluminación comenzó cuando se convirtió en discípulo de
+            Hariharananda, un venerado maestro de Kriya Yoga.
+          </p>
+
+          <p>
+            El Kriya Yoga es una antigua práctica de meditación que se centra en
+            la purificación del cuerpo y la mente a través de técnicas de
+            respiración y meditación. Bajo la tutela de Hariharananda,
+            Kriyananda profundizó en esta disciplina milenaria, encontrando en
+            ella la luz y la sabiduría que tanto anhelaba. Con el deseo de
+            compartir los frutos de su propia transformación espiritual con
+            otros, Kriyananda decidió establecer su propia escuela de yoga en
+            Argentina. Así nació Samadhi Yoga, un lugar donde los buscadores de
+            la verdad pueden encontrar orientación, apoyo y comunidad en su
+            viaje espiritual.
+            <!--Boton de BOOSTRAP PARA "VER MAS"-->
+            <button
+              class="btn btn-secondary btn-estilo"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#historia-completa"
+              aria-expanded="false"
+              aria-controls="historia-completa">
+              Ver más
+            </button>
+          </p>
+
+          <div class="collapse" id="historia-completa">
+            <!--se completa la funcion del boton-->
+            <p>
+              Con el paso de los años, Samadhi Yoga ha crecido y florecido.
+              Actualmente, cuenta con un centro de diez hectáreas en la ciudad
+              de General Roca, en una bella área natural cercana al río y a un
+              relieve característico de la zona conocido como "las bardas" del
+              Alto Valle. Allí se imparten clases de yoga, meditación y
+              filosofía espiritual. Este centro es refugios de paz y serenidad,
+              donde los estudiantes pueden encontrar alivio del estrés y la
+              agitación de la vida moderna, y conectar con su verdadero ser
+              interior.
+            </p>
+            <p>
+              La historia de Samadhi Yoga es una historia de amor, dedicación y
+              devoción. Es el testimonio vivo del poder transformador del yoga y
+              la meditación, y del deseo innato del ser humano de encontrar paz
+              y realización en su vida.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-      <ul style="list-style: none">
+      <ul>
         <li>
           © 1999 - 2023 Escuela de Yoga SAMADHI. Todos los derechos reservados.
         </li>
