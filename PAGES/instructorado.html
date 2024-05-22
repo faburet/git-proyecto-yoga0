@@ -11,17 +11,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
   </head>
   <body class="fondo">
     <header>
       <!--Titulos y logo para Desktop-->
-      <div class="header-name">
+      <div>
         <img
-          src="../IMG/klipartz2.png"
+          src="../img/klipartz2.png"
           id="logo-principal0"
           alt="logo principal de escuela de yoga" />
-        <div id="name">
+        <div class="name">
           <span>SAMADHI YOGA</span>
           <p>Union cuerpo-mente-alma</p>
         </div>
@@ -33,7 +33,7 @@
               type="search"
               placeholder="Buscar"
               aria-label="Search" />
-            <button class="btn btn-outline-danger search-button" type="submit">
+            <button class="btn btn-outline-danger search-boton" type="submit">
               Buscar
             </button>
           </form>
@@ -44,18 +44,16 @@
       <!--comienzo de la navbar de BOOSTRAP en movil-->
 
       <nav class="navbar navbar-expand-lg bg-menu ms-0 mt-0">
-        <div class="container-fluid" style="display: flex">
+        <div class="container-fluid">
           <a id="imagen-menu" href="#"
             ><img
               class="logo-principal"
-              src="../IMG/logo_principal3.png"
+              src="../img/logo_principal3.png"
               alt="silueta de hombre meditando frente al sol"
           /></a>
 
-          <div id="name-Mb">
+          <div class="name">
             <span>SAMADHI YOGA</span>
-
-            <p id="subname-Mb">Union cuerpo-mente-alma</p>
           </div>
           <!--boton de la barra posicionado arriba a la derecha en movil-->
           <button
@@ -74,19 +72,18 @@
 
           <!--contenido de opciones del menú-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-0 mb-lg-2">
-              <li class="nav-item">
+            <ul class="navbar-nav me-auto mb-0 mb-lg-2 navbar-propio">
+              <li class="nav-item navitem-propio">
                 <a
-                  style="color: aliceblue"
-                  class="nav-link active"
+                  class="nav-link navlink-propio"
                   aria-current="page"
                   href="../index.html"
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown navitem-propio">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle navlink-propio"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -96,7 +93,7 @@
                 <!-- menu dropdown-->
                 <ul class="dropdown-menu bg-menu">
                   <li>
-                    <a class="dropdown-item" href="../PAGES/nosotros.html"
+                    <a class="dropdown-item" href="nosotros.html"
                       >Sobre Nosotros</a
                     >
                   </li>
@@ -114,24 +111,31 @@
                 </ul>
               </li>
               <!-- fin de menú dropdown-->
-              <li class="nav-item">
-                <a class="nav-link" href="../PAGES/profesorado.html"
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="profesorado.html"
                   >Curso Profesorado</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../PAGES/instructorado.html"
+              <li class="nav-item navitem-propio">
+                <a
+                  id="current"
+                  class="nav-link navlink-propio"
+                  href="instructorado.html"
                   >Curso Instructorado</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Iniciacion Kriya Yoga</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="#"
+                  >Iniciacion Kriya Yoga</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tienda</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="#">Tienda</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../PAGES/contacto.html">Contacto</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
             <!--comienzo de la estructura de input y boton de busqueda-->
@@ -157,7 +161,7 @@
       <section class="banner-instructorado">
         <!--grid genera un overflow-->
         <div class="banner-textos">
-          <h1 class="title-h2">Instructorado Intensivo de Hatha Yoga</h1>
+          <h1 class="title-h2">INSTRUCTORADO DE HATHA YOGA</h1>
           <p>Opción Semipresencial y Opción completamente Online</p>
           <p>7 Módulos cursados en días sábados,</p>
           <p>cada 15 días, de 9 a 19hs. (horario Arg., GMT -3)</p>
@@ -167,7 +171,7 @@
       </section>
 
       <div class="grid-container-instructor">
-        <div class="info-general-instructorado">
+        <section class="info-general-instructorado">
           <p>
             Con este Intensivo te preparas para acceder a la Certificación como
             Instructor de Hatha Yoga. Esto te permitirá ejercer dando clases de
@@ -201,7 +205,7 @@
           <p>
             Cada módulo consta de: Clase Práctica, Clase Teórica, Evaluaciones.
           </p>
-        </div>
+        </section>
 
         <section class="imgs-instructorado">
           <div class="grid-images">
@@ -246,7 +250,7 @@
             /></a>
           </div>
         </section>
-
+        <!--seccion equipo decente-->
         <section class="docentes">
           <h3>EQUIPO DOCENTE</h3>
           <div class="grid-docentes">
@@ -292,94 +296,92 @@
             </div>
           </div>
         </section>
+        <!--Seccion de modalidades de pago-->
+        <section class="pago">
+          <!--grilla hecha con BOOSTRAP-->
+          <div class="row">
+            <div class="col-md-4 custom-border col1 col1-pago">
+              <h5>Valor del Instructorado</h5>
+              <p>$900.000.- Pesos Argentinos</p>
+              <p>o</p>
+              <p>3 Cuotas de</p>
+              <p>$350.000.- Pesos Chilenos</p>
+              <p>pagando con Transferencia</p>
+              <p>o Débito mes a mes</p>
+            </div>
+            <div class="col-md-6 custom-border col2-pago">
+              <p>Incluye:</p>
+              <p>Matrícula, Set de Materiales y Certificación.</p>
+              <p>
+                En el momento de tu inscripción recibirás tu set de materiales y
+                también podrás acceder a todas nuestras Clases de Yoga Integral
+                Online en forma gratuita.
+              </p>
+              <p>
+                Estas clases gratuitas se prolongan hasta el final de tu proceso
+                de Certificación.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 custom-border col1 col1-pago">
+              <h5>Facilidades de Pago</h5>
+              <p>Transferencias</p>
+              <p>Transbank - PayPal</p>
+              <p>Mercado Pago</p>
+              <p>Hasta 6 cuotas sin interés</p>
+            </div>
+            <div class="col-md-6 custom-border col2-pago">
+              <p>Accederás también</p>
+              <p>
+                y en forma gratuita a todas las clases de Yoga Online de nuestra
+                escuela, dictadas por Kriyananda.
+              </p>
+              <p>
+                Estas clases gratuitas terminarán en la fecha del módulo 7, día
+                del examen final.
+              </p>
+              <p>Cupos limitados por intensivo. ¡Reserva el tuyo!</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 custom-border col1 col1-pago">
+              <h5>Valor Total (Instructorado)</h5>
+              <p>para fuera de Argentina</p>
+              <p>US$997.- Dólares Americanos</p>
+              <p>o</p>
+              <p>3 Cuotas de</p>
+              <p>$367.- Dólares Americanos</p>
+            </div>
+            <div class="col-md-6 custom-border col2-pago">
+              <p>Puedes acordar tu entrevista de POSTULACIÓN</p>
+              <p>
+                comunicándote al +56 9 8942 6906 o rellenando el Formulario de
+                Postulación.
+              </p>
+              <p>¡Será un gusto conocerte!</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 custom-border col1 col1-pago">
+              <h5>Datos de Transferencia Electrónica</h5>
+              <p>Banco Nación Argentina</p>
+              <p>Cta Cte.: 32101161-09</p>
+              <p>Fulano Pepito Flores</p>
+              <p>Rut 21.156.262-5</p>
+              <p>info@escueladeyogasamadhi.ar</p>
+            </div>
+            <div class="col-md-6 custom-border col2-pago">
+              <p>Una vez que hagas tu pago de inscripción</p>
+              <p>no olvides enviarnos un correo personal con tu</p>
+              <p>comprobante a info@escueladeyogasamadhi.ar</p>
+            </div>
+          </div>
+        </section>
       </div>
-      <!--SECCION DE PAGO-->
-      <section class="container">
-        <!--grilla hecha con BOOSTRAP-->
-        <div class="row">
-          <div class="col custom-border col1">
-            <h5>Valor del Instructorado</h5>
-            <p>$900.000.- Pesos Argentinos</p>
-            <p>o</p>
-            <p>3 Cuotas de</p>
-            <p>$350.000.- Pesos Chilenos</p>
-            <p>pagando con Transferencia</p>
-            <p>o Débito mes a mes</p>
-          </div>
-          <div class="col custom-border">
-            <p>Incluye:</p>
-            <p>Matrícula, Set de Materiales y Certificación.</p>
-            <p>
-              En el momento de tu inscripción recibirás tu set de materiales y
-              también podrás acceder a todas nuestras Clases de Yoga Integral
-              Online en forma gratuita.
-            </p>
-            <p>
-              Estas clases gratuitas se prolongan hasta el final de tu proceso
-              de Certificación.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col custom-border col1">
-            <h5>Facilidades de Pago</h5>
-            <p>Transferencias</p>
-            <p>Transbank - PayPal</p>
-            <p>Mercado Pago</p>
-            <p>Hasta 6 cuotas sin interés</p>
-          </div>
-          <div class="col custom-border">
-            <p>Accederás también</p>
-            <p>
-              y en forma gratuita a todas las clases de Yoga Online de nuestra
-              escuela, dictadas por Simran Kaur.
-            </p>
-            <p>
-              Estas clases gratuitas terminarán en la fecha del módulo 7, día
-              del examen final.
-            </p>
-            <p>Cupos limitados por intensivo. ¡Reserva el tuyo!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col custom-border col1">
-            <h5>Valor Total del Instructorado</h5>
-            <p>para fuera de Argentina</p>
-            <p>US$997.- Dólares Americanos</p>
-            <p>o</p>
-            <p>3 Cuotas de</p>
-            <p>$367.- Dólares Americanos</p>
-          </div>
-          <div class="col custom-border">
-            <p>Puedes acordar tu entrevista de POSTULACIÓN</p>
-            <p>
-              comunicándote al +56 9 8942 6906 o rellenando el Formulario de
-              Postulación.
-            </p>
-            <p>¡Será un gusto conocerte!</p>
-          </div>
-        </div>
-        <div class="row" style="margin-bottom: 10%">
-          <div class="col custom-border col1">
-            <h5>Datos de Transferencia Electrónica</h5>
-            <p>Banco Nación Argentina</p>
-            <p>Cta Cte.: 32101161-09</p>
-            <p>Fulano Pepito Flores</p>
-            <p>Rut 21.156.262-5</p>
-            <p>info@escueladeyogasamadhi.ar</p>
-          </div>
-          <div class="col custom-border">
-            <p>Una vez que hagas tu pago de inscripción</p>
-            <p>
-              no olvides enviarnos un correo personal con tu comprobante a
-              info@escueladeyogasamadhi.ar
-            </p>
-          </div>
-        </div>
-      </section>
     </main>
     <footer class="footer">
-      <ul style="list-style: none">
+      <ul>
         <li>
           © 1999 - 2023 Escuela de Yoga SAMADHI. Todos los derechos reservados.
         </li>

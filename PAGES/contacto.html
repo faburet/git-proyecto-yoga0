@@ -11,17 +11,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
   </head>
   <body class="fondo">
     <header>
       <!--Titulos y logo para Desktop-->
-      <div class="header-name">
+      <div>
         <img
-          src="../IMG/klipartz2.png"
+          src="../img/klipartz2.png"
           id="logo-principal0"
           alt="logo principal de escuela de yoga" />
-        <div id="name">
+        <div class="name">
           <span>SAMADHI YOGA</span>
           <p>Union cuerpo-mente-alma</p>
         </div>
@@ -33,7 +33,7 @@
               type="search"
               placeholder="Buscar"
               aria-label="Search" />
-            <button class="btn btn-outline-danger search-button" type="submit">
+            <button class="btn btn-outline-danger search-boton" type="submit">
               Buscar
             </button>
           </form>
@@ -44,18 +44,16 @@
       <!--comienzo de la navbar de BOOSTRAP en movil-->
 
       <nav class="navbar navbar-expand-lg bg-menu ms-0 mt-0">
-        <div class="container-fluid" style="display: flex">
+        <div class="container-fluid">
           <a id="imagen-menu" href="#"
             ><img
               class="logo-principal"
-              src="../IMG/logo_principal3.png"
+              src="../img/logo_principal3.png"
               alt="silueta de hombre meditando frente al sol"
           /></a>
 
-          <div id="name-Mb">
+          <div class="name">
             <span>SAMADHI YOGA</span>
-
-            <p id="subname-Mb">Union cuerpo-mente-alma</p>
           </div>
           <!--boton de la barra posicionado arriba a la derecha en movil-->
           <button
@@ -74,19 +72,18 @@
 
           <!--contenido de opciones del menú-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-0 mb-lg-2">
-              <li class="nav-item">
+            <ul class="navbar-nav me-auto mb-0 mb-lg-2 navbar-propio">
+              <li class="nav-item navitem-propio">
                 <a
-                  style="color: aliceblue"
-                  class="nav-link active"
+                  class="nav-link navlink-propio"
                   aria-current="page"
                   href="../index.html"
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown navitem-propio">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle navlink-propio"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -96,7 +93,7 @@
                 <!-- menu dropdown-->
                 <ul class="dropdown-menu bg-menu">
                   <li>
-                    <a class="dropdown-item" href="../PAGES/nosotros.html"
+                    <a class="dropdown-item" href="nosotros.html"
                       >Sobre Nosotros</a
                     >
                   </li>
@@ -114,24 +111,31 @@
                 </ul>
               </li>
               <!-- fin de menú dropdown-->
-              <li class="nav-item">
-                <a class="nav-link" href="../PAGES/profesorado.html"
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="profesorado.html"
                   >Curso Profesorado</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../PAGES/instructorado.html"
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="instructorado.html"
                   >Curso Instructorado</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Iniciacion Kriya Yoga</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="#"
+                  >Iniciacion Kriya Yoga</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tienda</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="#">Tienda</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../PAGES/contacto.html">Contacto</a>
+              <li class="nav-item navitem-propio">
+                <a
+                  id="current"
+                  class="nav-link navlink-propio"
+                  href="contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
             <!--comienzo de la estructura de input y boton de busqueda-->
@@ -357,7 +361,7 @@
       </section>
     </main>
     <footer class="footer">
-      <ul style="list-style: none">
+      <ul>
         <li>
           © 1999 - 2023 Escuela de Yoga SAMADHI. Todos los derechos reservados.
         </li>

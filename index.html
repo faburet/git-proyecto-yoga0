@@ -11,17 +11,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
   </head>
   <body>
     <header>
       <!--Titulos y logo para Desktop-->
-      <div class="header-name">
+      <div>
         <img
           src="IMG/klipartz2.png"
           id="logo-principal0"
           alt="logo principal de escuela de yoga" />
-        <div id="name">
+        <div class="name">
           <span>SAMADHI YOGA</span>
           <p>Union cuerpo-mente-alma</p>
         </div>
@@ -33,7 +33,7 @@
               type="search"
               placeholder="Buscar"
               aria-label="Search" />
-            <button class="btn btn-outline-danger search-button" type="submit">
+            <button class="btn btn-outline-danger search-boton" type="submit">
               Buscar
             </button>
           </form>
@@ -44,7 +44,7 @@
       <!--comienzo de la navbar de BOOSTRAP en movil-->
 
       <nav class="navbar navbar-expand-lg bg-menu ms-0 mt-0">
-        <div class="container-fluid" style="display: flex">
+        <div class="container-fluid">
           <a id="imagen-menu" href="#"
             ><img
               class="logo-principal"
@@ -52,10 +52,8 @@
               alt="silueta de hombre meditando frente al sol"
           /></a>
 
-          <div id="name-Mb">
+          <div class="name">
             <span>SAMADHI YOGA</span>
-
-            <p id="subname-Mb">Union cuerpo-mente-alma</p>
           </div>
           <!--boton de la barra posicionado arriba a la derecha en movil-->
           <button
@@ -74,19 +72,20 @@
 
           <!--contenido de opciones del menú-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-0 mb-lg-2">
-              <li class="nav-item">
+            <p id="subname-Mb">Union cuerpo-mente-alma</p>
+            <ul class="navbar-nav me-auto mb-0 mb-lg-2 navbar-propio">
+              <li class="nav-item navitem-propio">
                 <a
-                  style="color: aliceblue"
-                  class="nav-link active"
+                  id="current"
+                  class="nav-link active navlink-propio"
                   aria-current="page"
                   href="index.html"
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown navitem-propio">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle navlink-propio"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -112,24 +111,30 @@
                 </ul>
               </li>
               <!-- fin de menú dropdown-->
-              <li class="nav-item">
-                <a class="nav-link" href="PAGES/profesorado.html"
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="PAGES/profesorado.html"
                   >Curso Profesorado</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="PAGES/instructorado.html"
+              <li class="nav-item navitem-propio">
+                <a
+                  class="nav-link navlink-propio"
+                  href="PAGES/instructorado.html"
                   >Curso Instructorado</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Iniciacion Kriya Yoga</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="#"
+                  >Iniciacion Kriya Yoga</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tienda</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="#">Tienda</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="PAGES/contacto.html">Contacto</a>
+              <li class="nav-item navitem-propio">
+                <a class="nav-link navlink-propio" href="PAGES/contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
             <!--comienzo de la estructura de input y boton de busqueda-->
@@ -159,7 +164,7 @@
         <h2 class="title-h2">Iniciacion en Kriya Yoga.</h2>
       </div>
 
-      <div class="profesorado">
+      <section class="profesorado">
         <a href="PAGES/profesorado.html">
           <img class="imagenes-cursos" src="IMG/imagen_gente_yoga0.webp" />
           <div class="contiene-info-curso">
@@ -168,8 +173,8 @@
             <p>Curso de Yoga de 500 hs</p>
           </div>
         </a>
-      </div>
-      <div class="instructorado">
+      </section>
+      <section class="instructorado">
         <a href="PAGES/instructorado.html">
           <img class="imagenes-cursos" src="IMG/imagen_gente_yoga.webp" />
           <div class="contiene-info-curso">
@@ -178,8 +183,8 @@
             <p>Curso de Yoga de 200 hs</p>
           </div>
         </a>
-      </div>
-      <div class="iniciacion">
+      </section>
+      <section class="iniciacion">
         <a href="#">
           <img class="imagenes-cursos" src="IMG/Kriya-iniciacion.jpeg" />
         </a>
@@ -188,12 +193,12 @@
           <h3>KRIYA YOGA</h3>
           <p>Duración de 2 días</p>
         </div>
-      </div>
+      </section>
       <div class="img-escuela">
         <img src="IMG/vela1.jpg" />
       </div>
 
-      <div id="info-escuela">
+      <section id="info-escuela">
         <h2>NUESTRA ESCUELA</h2>
         <p>
           La Escuela Samadhi Yoga es un centro de renombre que ha estado
@@ -229,12 +234,12 @@
           siendo guiados por profesionales expertos y que cuentan con todo lo
           necesario para su desarrollo y bienestar.
         </p>
-      </div>
+      </section>
     </main>
     <!--final del main-->
 
     <footer class="footer">
-      <ul style="list-style: none">
+      <ul>
         <li>
           © 1999 - 2023 Escuela de Yoga SAMADHI. Todos los derechos reservados.
         </li>
